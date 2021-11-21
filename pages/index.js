@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`https://jump-poap.vercel.app/api/claim`);
+  const res = await fetch(`https://jump-claim.vercel.app/api/claim`);
   const data = await res.json()
 
   if (!data) {
